@@ -101,6 +101,11 @@ const filterButtons = document.querySelectorAll('.filterbutton');
 
   } catch (error) {
     console.error('Error:', error);
+    document.querySelector('body').innerHTML = `
+    <h1>Something went wrong...</h1>
+    <p>Could not fetch restaurant data 	&#128128 </p>
+    <p>You are not connected to the Metropolia intranet</p>
+    `;
   }
 })();
 
