@@ -5,12 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="t2.css">
-  <script src="t2.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="JS.js" defer></script>
 </head>
 
 <body>
-  <h1>Restaurants</h1>
+  <nav>
+    <h1>Restaurants</h1>
+    <form id="filterbuttons">
+      <input type="radio" class="filterbutton" id="all" name="rest_filter" value="All" checked>
+      <label for="all">All</label>
+      <input type="radio" class="filterbutton" id="sodexo" name="rest_filter" value="Sodexo">
+      <label for="sodexo">Sodexo</label>
+      <input type="radio" class="filterbutton" id="compass" name="rest_filter" value="Compass">
+      <label for="compass">Compass</label>
+    </form>
+  </nav>
   <table>
     <tr>
       <th>Name</th>
