@@ -87,6 +87,7 @@ const filterButtons = document.querySelectorAll('.filterbutton');
 // display to the site
 (async function() {
   try {
+    restaurantArea.innerHTML = `Fetching restaurant data...`;
     await fetch('https://10.120.32.94/restaurant/api/v1/restaurants')
     .then(response => response.json())
     .then(data => {
